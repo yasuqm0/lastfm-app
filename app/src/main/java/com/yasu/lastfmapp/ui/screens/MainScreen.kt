@@ -34,9 +34,9 @@ fun MainScreen() {
         }
     ) { innerPadding ->
         when (selectedIndex) {
-            0 -> Text(text = "Explorar", modifier = Modifier.padding(innerPadding))
-            1 -> Text(text = "Artistas", modifier = Modifier.padding(innerPadding))
-            2 -> Text(text = "Perfil", modifier = Modifier.padding(innerPadding))
+            0 -> HomeScreen()
+            1 -> ExploreScreen()
+            2 -> ProfileScreen()
         }
     }
 }

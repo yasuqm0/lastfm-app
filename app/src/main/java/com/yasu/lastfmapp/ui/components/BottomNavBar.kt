@@ -2,8 +2,8 @@ package com.yasu.lastfmapp.ui.components
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.MusicNote
 import androidx.compose.material.icons.filled.Person
-import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
@@ -19,14 +19,14 @@ fun BottomNavBar(
         NavigationBarItem(
             selected = selectedIndex == 0,
             onClick = { onItemSelected(0) },
-            icon = { Icon(Icons.Default.Home, contentDescription = "Explorar") },
-            label = { Text("Explorar") }
+            icon = { Icon(Icons.Default.Home, contentDescription = "Inicio") },
+            label = { Text("Inicio") }
         )
         NavigationBarItem(
             selected = selectedIndex == 1,
             onClick = { onItemSelected(1) },
-            icon = { Icon(Icons.Default.Search, contentDescription = "Artistas") },
-            label = { Text("Artistas") }
+            icon = { Icon(Icons.Default.MusicNote, contentDescription = "Explorar") },
+            label = { Text("Explorar") }
         )
         NavigationBarItem(
             selected = selectedIndex == 2,
